@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased text-gray-200 bg-gray-900;
+  }
+}
+
+@layer components {
+  .markdown-body {
+    @apply text-base leading-relaxed break-words;
+  }
+  .markdown-body h1 {
+    @apply text-3xl font-bold mt-8 mb-4 pb-2 border-b border-gray-700 text-purple-300;
+  }
+  .markdown-body h2 {
+    @apply text-2xl font-bold mt-8 mb-4 pb-2 border-b border-gray-700 text-purple-200;
+  }
+  .markdown-body h3 {
+    @apply text-xl font-bold mt-6 mb-3 text-indigo-300;
+  }
+  .markdown-body p {
+    @apply my-4;
+  }
+  .markdown-body a {
+    @apply text-indigo-400 hover:text-indigo-300 hover:underline transition-colors;
+  }
+  .markdown-body ul {
+    @apply list-disc list-inside my-4 pl-4 space-y-1;
+  }
+  .markdown-body ol {
+    @apply list-decimal list-inside my-4 pl-4 space-y-1;
+  }
+  .markdown-body img {
+    @apply max-w-full h-auto rounded-lg shadow-lg border border-gray-800 my-6 cursor-zoom-in transition-transform hover:scale-[1.02];
+  }
+  .markdown-body blockquote {
+    @apply pl-4 border-l-4 border-purple-500 text-gray-400 italic my-6 bg-gray-800/50 py-2 pr-4 rounded-r-lg;
+  }
+  .markdown-body code {
+    @apply bg-gray-800 text-pink-300 px-1.5 py-0.5 rounded text-sm font-mono;
+  }
+  .markdown-body pre {
+    @apply bg-gray-950 p-4 rounded-xl shadow-inner overflow-x-auto my-6 border border-gray-800;
+  }
+  .markdown-body pre code {
+    @apply bg-transparent text-gray-300 p-0 text-sm font-mono;
+  }
+  .markdown-body table {
+    @apply w-full text-left border-collapse my-6 text-sm;
+  }
+  .markdown-body th {
+    @apply border-b border-gray-700 font-bold p-3 bg-gray-800/80 text-purple-200;
+  }
+  .markdown-body td {
+    @apply border-b border-gray-800 p-3;
+  }
+  .markdown-body tr:nth-child(even) {
+    @apply bg-gray-800/30;
+  }
+  .markdown-body hr {
+    @apply border-t border-gray-800 my-8;
+  }
+
+  /* Custom Alert Styles */
+  .alert-box {
+    @apply p-4 my-6 rounded-xl border-l-4 flex gap-3 shadow-lg;
+  }
+  .alert-warning {
+    @apply bg-amber-900/20 border-amber-500 text-amber-200;
+  }
+  .alert-info {
+    @apply bg-blue-900/20 border-blue-500 text-blue-200;
+  }
+  .alert-success {
+    @apply bg-emerald-900/20 border-emerald-500 text-emerald-200;
+  }
+  .alert-danger {
+    @apply bg-rose-900/20 border-rose-500 text-rose-200;
+  }
+}

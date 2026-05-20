@@ -1,0 +1,12 @@
+{
+  "games": [
+    {
+      "slug": "stoneshard",
+      "title": "紫色晶石 (Stoneshard)",
+      "cover": "/images/stoneshard/cover.jpg",
+      "description": "中世紀開放世界回合制 RPG",
+      "articleCount": 5,
+      "lastUpdated": "2026-05-02"
+    }
+  ]
+}

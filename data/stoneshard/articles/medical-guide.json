@@ -1,0 +1,48 @@
+{
+  "id": "medical-guide",
+  "title": "【系統機制】醫療護理、疼痛控制與精神健康指南",
+  "author": "社群精華整理",
+  "source": "https://forum.gamer.com.tw/C.php?bsn=38794&snA=284",
+  "date": "2026-05-19",
+  "gameVersion": "0.9.4+",
+  "category": "guide",
+  "subcategory": "medical",
+  "tags": [
+    "醫療",
+    "精神",
+    "神志",
+    "痛苦"
+  ],
+  "toc": [
+    {
+      "id": "healing",
+      "title": "傷勢處理與醫療用品"
+    },
+    {
+      "id": "pain-management",
+      "title": "疼痛控制與解迷醉"
+    },
+    {
+      "id": "mental-health",
+      "title": "鬥志與神志回復"
+    }
+  ],
+  "sections": [
+    {
+      "id": "healing",
+      "title": "傷勢處理與醫療用品",
+      "content": "### 醫療用品與傷勢處理\n\n本遊戲受傷會影響肢體功能，必須對症下藥：\n![醫療](/images/stoneshard/beginner-guide/img_0_9_4_17.PNG) ![醫療2](/images/stoneshard/beginner-guide/img_0_9_4_18.PNG)\n\n*   **流血**：必須立刻使用 **繃帶**。\n*   **骨折/重傷**：必須使用 **夾板** 固定。\n*   **消毒與傷口感染**：傷口裂開需要使用烈酒或藥膏消毒，否則會引發感染扣除免疫力。"
+    },
+    {
+      "id": "pain-management",
+      "title": "疼痛控制與解迷醉",
+      "content": "### 疼痛控制機制\n\n受傷會導致痛苦值迅速飆升，高痛苦會帶來極大的減益效果甚至休克。\n![止痛](/images/stoneshard/beginner-guide/img_0_9_4_19.PNG) ![止痛2](/images/stoneshard/beginner-guide/img_0_9_4_20.PNG)\n\n*   **止痛藥與草藥**：使用止痛藥、海綿、或百里香等草藥。\n*   **酒精止痛的雙面刃**：喝酒可以快速止痛，但會導致**迷醉值 (Drunkenness)** 大幅上升，醉酒後會出現口齒不清、命中降低等負面狀態。\n*   **解酒技巧**：可以使用銀杯裝水喝，或者吃特定的解毒/降迷醉草藥來消除宿醉。"
+    },
+    {
+      "id": "mental-health",
+      "title": "鬥志與神志回復",
+      "content": "### 保持精神健康的必要性\n\n遊戲中設有 **鬥志 (Morale)** 與 **神志 (Sanity)** 兩個精神指標，必須儘量保持在 50% 以上。\n![精神](/images/stoneshard/beginner-guide/img_0_9_4_15.PNG) ![精神2](/images/stoneshard/beginner-guide/img_0_9_4_16.PNG)\n\n*   **低精神減益**：鬥志與神志過低會引發各種嚴重的負面精神狀態（如偏執、抑鬱、恐慌等），會極大增加死亡率。\n*   **自然恢復**：在安全區域休息、睡眠可以隨時間緩慢恢復鬥志與神志。\n*   **飲食恢復**：\n    *   吃好料理：例如「香草煎魚」能提供高達 +8% 的飲食鬥志。\n    *   吃甜食：例如曼郡出售的「鬆餅」是恢復神智的良藥。"
+    }
+  ],
+  "comments": []
+}

@@ -1,0 +1,42 @@
+{
+  "slug": "stoneshard",
+  "title": "紫色晶石 (Stoneshard)",
+  "categories": {
+    "guide": {
+      "label": "攻略教學",
+      "icon": "📖",
+      "description": "新手教學、系統介紹等固定內容",
+      "subcategories": [
+        { "slug": "beginner", "label": "新手入門" },
+        { "slug": "systems", "label": "系統機制" },
+        { "slug": "dungeon", "label": "地牢攻略" },
+        { "slug": "economy", "label": "經濟系統" },
+        { "slug": "caravan", "label": "篷車系統" },
+        { "slug": "cooking", "label": "料理相關" },
+        { "slug": "medical", "label": "醫療止痛" },
+        { "slug": "equipment", "label": "裝備相關" }
+      ]
+    },
+    "build": {
+      "label": "流派配置",
+      "icon": "⚔️",
+      "description": "各種流派、能力點法",
+      "subcategories": [
+        { "slug": "melee", "label": "近戰流派" },
+        { "slug": "ranged", "label": "遠程流派" },
+        { "slug": "magic", "label": "法術流派" },
+        { "slug": "hybrid", "label": "混合流派" }
+      ]
+    },
+    "tips": {
+      "label": "心得技巧",
+      "icon": "💡",
+      "description": "快速升級、賺錢、實用技巧等",
+      "subcategories": [
+        { "slug": "money", "label": "賺錢省錢" },
+        { "slug": "leveling", "label": "升級技巧" },
+        { "slug": "misc", "label": "雜項知識" }
+      ]
+    }
+  }
+}

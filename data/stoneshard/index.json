@@ -1,0 +1,137 @@
+[
+  {
+    "id": "beginner-guide",
+    "title": "【新手入門】基本操作、存檔與生存製作指南",
+    "author": "社群精華整理",
+    "date": "2026-05-19",
+    "gameVersion": "0.9.4+",
+    "category": "guide",
+    "subcategory": "beginner",
+    "tags": [
+      "新手",
+      "基礎",
+      "存檔",
+      "操作"
+    ]
+  },
+  {
+    "id": "caravan-guide",
+    "title": "【系統機制】大篷車系統：解鎖、升級與夥伴招募指南",
+    "author": "社群精華整理",
+    "date": "2026-05-19",
+    "gameVersion": "0.9.4+",
+    "category": "guide",
+    "subcategory": "caravan",
+    "tags": [
+      "大篷車",
+      "升級",
+      "夥伴",
+      "商貨"
+    ]
+  },
+  {
+    "id": "cooking-guide",
+    "title": "【系統機制】料理烹飪、食材獲取與保存指南",
+    "author": "社群精華整理",
+    "date": "2026-05-19",
+    "gameVersion": "0.9.4+",
+    "category": "guide",
+    "subcategory": "cooking",
+    "tags": [
+      "烹飪",
+      "食材",
+      "保存",
+      "食譜"
+    ]
+  },
+  {
+    "id": "dungeon-guide",
+    "title": "【地牢攻略】契約任務、難度機制、地牢狀態與戰術指南",
+    "author": "社群精華整理",
+    "date": "2026-05-19",
+    "gameVersion": "0.9.4+",
+    "category": "guide",
+    "subcategory": "dungeon",
+    "tags": [
+      "地牢",
+      "任務",
+      "討價還價",
+      "戰術"
+    ]
+  },
+  {
+    "id": "dungeon-knowledge",
+    "title": "關於地牢的一些知識 (0.9.4+)",
+    "author": "82jw",
+    "date": "2026-05-02",
+    "gameVersion": "0.9.4+",
+    "category": "guide",
+    "subcategory": "dungeon",
+    "tags": [
+      "地牢",
+      "任務",
+      "傳聞本",
+      "文物"
+    ]
+  },
+  {
+    "id": "economy-guide",
+    "title": "【心得技巧】新手致富秘笈：交易、裝備維修與賺錢省錢指南",
+    "author": "社群精華整理",
+    "date": "2026-05-19",
+    "gameVersion": "0.9.4+",
+    "category": "tips",
+    "subcategory": "money",
+    "tags": [
+      "賺錢",
+      "維修",
+      "交易",
+      "商人"
+    ]
+  },
+  {
+    "id": "enchantment-guide",
+    "title": "【攻略】新手附魔選擇小技巧",
+    "author": "巴哈姆特網友",
+    "date": "2026-05-19",
+    "gameVersion": "0.9.4+",
+    "category": "guide",
+    "subcategory": "equipment",
+    "tags": [
+      "附魔",
+      "裝備",
+      "新手技巧",
+      "洗屬性"
+    ]
+  },
+  {
+    "id": "heavy-armor-build",
+    "title": "『浪漫配置』全重甲+高機動+雙手劍+阿娜",
+    "author": "请不要G8",
+    "date": "2026-05-02",
+    "gameVersion": "0.9.3+",
+    "category": "build",
+    "subcategory": "melee",
+    "tags": [
+      "流派",
+      "雙手劍",
+      "重甲",
+      "阿娜"
+    ]
+  },
+  {
+    "id": "medical-guide",
+    "title": "【系統機制】醫療護理、疼痛控制與精神健康指南",
+    "author": "社群精華整理",
+    "date": "2026-05-19",
+    "gameVersion": "0.9.4+",
+    "category": "guide",
+    "subcategory": "medical",
+    "tags": [
+      "醫療",
+      "精神",
+      "神志",
+      "痛苦"
+    ]
+  }
+]
