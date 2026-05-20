@@ -2,6 +2,7 @@ export class Router {
   constructor(routes) {
     this.routes = routes;
     this.currentView = null;
+    this.navigatedCount = 0;
     
     // Listen to hash changes
     window.addEventListener('hashchange', this.handleRoute.bind(this));
@@ -71,8 +72,22 @@ export class Router {
         container.innerHTML = '';
         container.appendChild(content);
         
-        // Scroll to top
-        window.scrollTo(0, 0);
+        this.navigatedCount++;
+        
+        // Handle post-render anchor scroll if exists
+        const anchor = hash.split('#')[1];
+        if (anchor) {
+          setTimeout(() => {
+            const el = document.getElementById(anchor);
+            if (el) {
+              el.scrollIntoView({ behavior: 'smooth' });
+            } else {
+              window.scrollTo(0, 0);
+            }
+          }, 100);
+        } else {
+          window.scrollTo(0, 0);
+        }
       } catch (error) {
         console.error('Route error:', error);
         container.innerHTML = `
@@ -96,5 +111,25 @@ export class Router {
 
   navigate(path) {
     window.location.hash = path;
+  }
+
+  safeBack(slug, category, subcategory) {
+    if (this.navigatedCount > 1) {
+      window.history.back();
+    } else {
+      // Fallback hierarchy navigation
+      if (slug && category && subcategory) {
+        // From Article back to CategoryList
+        this.navigate(`/${slug}/${category}/${subcategory}`);
+      } else if (slug && category) {
+        // From CategoryList back to GameHome
+        this.navigate(`/${slug}`);
+      } else if (slug) {
+        // From GameHome back to Home
+        this.navigate('/');
+      } else {
+        this.navigate('/');
+      }
+    }
   }
 }

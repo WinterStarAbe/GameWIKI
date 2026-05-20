@@ -14,30 +14,40 @@ export async function renderCategoryList({ slug, cat, subcat }) {
     const subcategoryInfo = categoryInfo.subcategories.find(s => s.slug === subcat);
     if (!subcategoryInfo) throw new Error('Subcategory not found');
 
-    // Breadcrumbs
+    // Breadcrumbs with Back Button
     let html = `
-      <nav class="flex mb-8 text-sm" aria-label="Breadcrumb">
-        <ol class="inline-flex items-center space-x-1 md:space-x-3 text-gray-400">
-          <li class="inline-flex items-center">
-            <a href="#/" class="inline-flex items-center hover:text-purple-400 transition-colors">
-              <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path></svg>
-              首頁
-            </a>
-          </li>
-          <li>
-            <div class="flex items-center">
-              <svg class="w-6 h-6 text-gray-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-              <a href="#/${slug}" class="ml-1 md:ml-2 hover:text-purple-400 transition-colors">${game.title}</a>
-            </div>
-          </li>
-          <li>
-            <div class="flex items-center">
-              <svg class="w-6 h-6 text-gray-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-              <span class="ml-1 md:ml-2 text-gray-200">${subcategoryInfo.label}</span>
-            </div>
-          </li>
-        </ol>
-      </nav>
+      <div class="flex items-center gap-4 mb-8">
+        <button id="back-btn" class="back-btn" aria-label="返回上一頁">
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+          </svg>
+        </button>
+        <nav class="text-sm" aria-label="Breadcrumb">
+          <ol class="inline-flex items-center space-x-1 md:space-x-3 text-gray-400 flex-wrap">
+            <li class="inline-flex items-center">
+              <a href="#/" class="inline-flex items-center hover:text-purple-400 transition-colors">首頁</a>
+            </li>
+            <li>
+              <div class="flex items-center">
+                <svg class="w-6 h-6 text-gray-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                <a href="#/${slug}" class="ml-1 md:ml-2 hover:text-purple-400 transition-colors">${game.title}</a>
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center">
+                <svg class="w-6 h-6 text-gray-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                <a href="#/${slug}#${cat}" class="ml-1 md:ml-2 hover:text-purple-400 transition-colors">${categoryInfo.label}</a>
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center">
+                <svg class="w-6 h-6 text-gray-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                <span class="ml-1 md:ml-2 text-gray-200">${subcategoryInfo.label}</span>
+              </div>
+            </li>
+          </ol>
+        </nav>
+      </div>
 
       <div class="mb-10">
         <div class="flex items-center gap-3 mb-2">
@@ -86,6 +96,20 @@ export async function renderCategoryList({ slug, cat, subcat }) {
     } catch (e) {
         console.error(e);
     }
+
+    // Attach Back Button click event
+    setTimeout(() => {
+      const backBtn = container.querySelector('#back-btn');
+      if (backBtn) {
+        backBtn.addEventListener('click', () => {
+          if (window.appRouter) {
+            window.appRouter.safeBack(slug, cat);
+          } else {
+            window.location.hash = `#/${slug}`;
+          }
+        });
+      }
+    }, 50);
 
   } catch (error) {
     container.innerHTML = `

@@ -1,4 +1,4 @@
-# GameWIKI Local Learnings Journal
+﻿# GameWIKI Local Learnings Journal
 
 ## 🚨 [BUG] SPA Hash Router Parameter Collisions with Nested Hash Anchors
 **日期：** 2026-05-19
@@ -72,3 +72,41 @@ Stoneshard 社群大長文（0.9.2/0.9.3/0.9.4）中含有大量網友在留言�
 
 **重啟條件：** 
 若未來有新的大批攻略被導入，或前端 UI 新增專門的「玩家留言板」組件，則需評估是否需要重構 comments 的結構。
+
+
+## 🚨 [BUG] Windows 環境下 Node.js 讀取帶有 UTF-8 BOM 檔案導致 YAML Frontmatter 正則匹配失效
+**日期：** 2026-05-20
+**徵兆：**
+使用 PowerShell 寫入的 Markdown 檔案，在執行 Ingest 時，`rawContent.match(/^---[\r\n]+([\s\S]*?)[\r\n]+---/)` 匹配失敗，且 frontmatter 沒有被剝除，直接殘留在內容中。
+
+**根因：**
+PowerShell 的 `Set-Content -Encoding utf8` 寫入的 UTF-8 檔案預設會包含 Byte Order Mark (BOM, 0xFEFF)。在 Node.js 中讀取為 string 時，BOM 作為第一個字元（`\uFEFF`），導致正則匹配中的開頭定位點 `^---` 匹配失敗。
+
+**解決：**
+在讀取並解析 Markdown 內容前，先檢查並切除開合的 BOM：
+```javascript
+if (rawContent.charCodeAt(0) === 0xFEFF) {
+  rawContent = rawContent.substring(1);
+}
+```
+
+**預防：**
+In Windows 環境上開發 Node.js 檔案解析工具時，只要涉及字首匹配（如 `^`）或純文字讀取，必須優先清理 UTF-8 BOM，以避免匹配失效。
+
+---
+
+## ⚖️ [DECISION] 基於 navigatedCount 的前端安全路由回退機制 (safeBack)
+**日期：** 2026-05-20
+**背景：**
+在 SPA 應用中，若使用者在瀏覽器新開分頁直接訪問深層 URL（如特定文章），此時瀏覽器歷史紀錄為空。如果使用者點擊頁面上的「返回」按鈕，直接執行 `history.back()` 會無效或將使用者踢出本網站，嚴重破壞導航體驗。
+
+**選項：**
+- **方案一**：只使用簡單的 `window.history.back()`，不做任何防範處理。
+- **方案二**：直接綁定寫死的靜態上一級跳轉（例如文章頁返回按鈕永遠跳轉回分類頁）。
+- **方案三**：在 `Router` 中追蹤 navigated 頁次（`navigatedCount`），實作安全返回方法 `safeBack(slug, category, subcategory)`。若歷史大於 1，執行 `history.back()`；若為 0 則根據參數層級，引導至相應的上一級節點。
+
+**理由：**
+選擇 **方案三**。方案三能兼顧「回退至上一造訪頁」與「按內容結構向上回退」的雙重需求。若使用者是從搜尋結果跳入文章，返回時能正確退回搜尋結果頁（方案二做不到）；若使用者是直接開連結訪問，返回時能安全回到分類頁（方案一會失效），為無歷史紀錄的直接訪問提供防爆安全引導。
+
+**重啟條件：**
+如果未來路由系統改採 Browser History API（非 Hash 模式）或整合第三方路由框架，則需重新評估 navigatedCount 的計數機制。

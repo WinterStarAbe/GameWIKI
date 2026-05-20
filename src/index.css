@@ -80,4 +80,16 @@
   .alert-danger {
     @apply bg-rose-900/20 border-rose-500 text-rose-200;
   }
+
+  /* Back Button Styles */
+  .back-btn {
+    @apply flex items-center justify-center w-8 h-8 rounded-full border border-gray-700/50 bg-gray-800/40 text-gray-400 backdrop-blur-md shadow-lg transition-all duration-300 ease-out hover:border-purple-500/50 hover:bg-gray-800/60 hover:text-purple-400 hover:shadow-purple-500/10 cursor-pointer;
+  }
+  .back-btn svg {
+    @apply w-4 h-4 transition-transform duration-300 ease-out;
+  }
+  .back-btn:hover svg {
+    @apply -translate-x-0.5;
+  }
 }
+

@@ -1,4 +1,4 @@
-{
+﻿{
   "name": "gamewiki",
   "version": "1.0.0",
   "description": "",
@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "build:index": "node tools/build_search_index.js"
+    "build:index": "node tools/build_search_index.js",
+    "ingest": "node tools/ingest_workflow.js"
   },
   "keywords": [],
   "author": "",
