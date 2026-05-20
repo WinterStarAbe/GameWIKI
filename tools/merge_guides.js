@@ -111,6 +111,15 @@ async function process() {
   });
   fs.writeFileSync('E:\\WorkSpace\\GameWIKI\\data\\stoneshard\\index.json', JSON.stringify(index, null, 2));
   console.log('index.json updated.');
+  
+  // Auto trigger search index builder
+  try {
+    const { execSync } = require('child_process');
+    console.log('Rebuilding search indexes...');
+    execSync('node tools/build_search_index.js', { stdio: 'inherit' });
+  } catch (err) {
+    console.error('Failed to trigger search index builder:', err);
+  }
 }
 
 process();

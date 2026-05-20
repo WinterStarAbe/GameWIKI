@@ -4,6 +4,7 @@ import { renderHome } from './pages/Home.js';
 import { renderGameHome } from './pages/GameHome.js';
 import { renderCategoryList } from './pages/CategoryList.js';
 import { renderArticle } from './pages/Article.js';
+import { SearchController } from './utils/search.js';
 
 const routes = [
   { path: '/', handler: renderHome },
@@ -15,4 +16,5 @@ const routes = [
 // Initialize app
 document.addEventListener('DOMContentLoaded', () => {
   window.appRouter = new Router(routes);
+  window.searchController = new SearchController();
 });

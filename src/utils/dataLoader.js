@@ -27,4 +27,8 @@ export class DataLoader {
   static async getArticle(gameSlug, articleId) {
     return this.fetchJson(`/data/${gameSlug}/articles/${articleId}.json`);
   }
+
+  static async getSearchIndex(gameSlug) {
+    return this.fetchJson(`/data/${gameSlug}/search_index.json`);
+  }
 }

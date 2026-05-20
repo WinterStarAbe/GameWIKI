@@ -12,6 +12,19 @@ export class Router {
   async handleRoute() {
     const hash = window.location.hash.slice(1) || '/';
     const pathWithoutAnchor = hash.split('#')[0];
+    
+    if (this.lastLoadedPath === pathWithoutAnchor) {
+      const anchor = hash.split('#')[1];
+      if (anchor) {
+        const el = document.getElementById(anchor);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' });
+          return;
+        }
+      }
+    }
+    this.lastLoadedPath = pathWithoutAnchor;
+
     const pathParts = pathWithoutAnchor.split('?')[0].split('/').filter(Boolean);
     
     // Match route
