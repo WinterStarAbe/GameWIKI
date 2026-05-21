@@ -1,287 +1,267 @@
 [
   {
-    "id": "nioh3-all-bosses-no-armor",
-    "title": "(3) 【攻略】仁王３全主線BOSS跟其他BOSS 全裸不穿裝無傷 武士太刀 忍者太刀 新增2周目 傲岸鬼 禁忍者 @仁王 哈啦板 - 巴哈姆特",
+    "id": "nioh3-system-and-combat-guide",
+    "title": "《仁王3》系統改動探索與武士/忍者戰鬥心得",
+    "author": "社群精華整理",
+    "date": "2026-03-22",
+    "gameVersion": "1.0.0",
+    "category": "guide",
+    "subcategory": "systems",
+    "tags": [
+      "無傷",
+      "太刀",
+      "武士",
+      "忍者"
+    ]
+  },
+  {
+    "id": "nioh3-boss-guide-bakufu",
+    "title": "《仁王3》幕府篇 BOSS 無傷應對指南",
     "author": "社群精華整理",
     "date": "2026-03-22",
     "gameVersion": "1.0.0",
     "category": "guide",
     "subcategory": "misc",
-    "tags": []
+    "tags": [
+      "無傷",
+      "太刀",
+      "武士",
+      "忍者"
+    ]
   },
   {
-    "id": "nioh3-all-bosses-rating",
-    "title": "仁王 3 (Nioh 3) 全BOSS打法及難度評級",
-    "author": "社群精華整理",
-    "date": "2026-05-21",
-    "gameVersion": "1.0.0",
-    "category": "guide",
-    "subcategory": "misc",
-    "tags": []
-  },
-  {
-    "id": "nioh3-all-quest-guides",
-    "title": "仁王 3 (Nioh 3) 全奇譚任務攻略",
-    "author": "社群精華整理",
-    "date": "2026-05-21",
-    "gameVersion": "1.0.0",
-    "category": "guide",
-    "subcategory": "misc",
-    "tags": []
-  },
-  {
-    "id": "nioh3-axe-spin-absorption-build",
-    "title": "(3) 【攻略】減傷吸精華流 斧 ( 大旋風x八手亂劍 ) 其他武器可用 二周目裝備配置 (v1.03版) @仁王 哈啦板 - 巴哈姆特",
+    "id": "nioh3-boss-guide-kodai",
+    "title": "《仁王3》古代篇 BOSS 無傷應對指南",
     "author": "社群精華整理",
     "date": "2026-03-22",
     "gameVersion": "1.0.0",
-    "category": "build",
-    "subcategory": "endgame-builds",
-    "tags": []
+    "category": "guide",
+    "subcategory": "misc",
+    "tags": [
+      "無傷",
+      "太刀",
+      "武士",
+      "忍者"
+    ]
+  },
+  {
+    "id": "nioh3-boss-guide-heian",
+    "title": "《仁王3》平安篇 BOSS 無傷應對指南",
+    "author": "社群精華整理",
+    "date": "2026-03-22",
+    "gameVersion": "1.0.0",
+    "category": "guide",
+    "subcategory": "misc",
+    "tags": [
+      "無傷",
+      "太刀",
+      "武士",
+      "忍者"
+    ]
+  },
+  {
+    "id": "nioh3-boss-guide-sengoku",
+    "title": "《仁王3》戰國篇 BOSS 無傷應對指南",
+    "author": "社群精華整理",
+    "date": "2026-03-22",
+    "gameVersion": "1.0.0",
+    "category": "guide",
+    "subcategory": "misc",
+    "tags": [
+      "無傷",
+      "太刀",
+      "武士",
+      "忍者"
+    ]
+  },
+  {
+    "id": "nioh3-boss-guide-elite",
+    "title": "《仁王3》精英與隱藏 BOSS 應對指南",
+    "author": "社群精華整理",
+    "date": "2026-03-22",
+    "gameVersion": "1.0.0",
+    "category": "guide",
+    "subcategory": "misc",
+    "tags": [
+      "無傷",
+      "太刀",
+      "武士",
+      "忍者"
+    ]
   },
   {
     "id": "nioh3-beginner-guide",
-    "title": "【仁王3測試】新手入門戰鬥技巧與精力管理指南",
-    "author": "殘心高手",
+    "title": "《仁王3》新手開荒必知黃金技巧與一週目通關精華",
+    "author": "社群精華整理",
     "date": "2026-05-21",
     "gameVersion": "1.0.0",
     "category": "guide",
     "subcategory": "beginner",
     "tags": [
-      "\\新手\\",
-      "\\仁王3\\",
-      "\\戰鬥\\",
-      "\\精力\\"
+      "新手",
+      "指南",
+      "精力管理",
+      "刷裝"
     ]
   },
   {
-    "id": "nioh3-beginner-tips",
-    "title": "仁王 3 (Nioh 3) 新手遊玩技巧講解",
+    "id": "nioh3-early-weapons-and-stats",
+    "title": "《仁王3》前期武器選擇、屬性配點與開荒快速削精指南",
     "author": "社群精華整理",
     "date": "2026-05-21",
     "gameVersion": "1.0.0",
     "category": "guide",
     "subcategory": "beginner",
-    "tags": []
-  },
-  {
-    "id": "nioh3-early-14-tips",
-    "title": "仁王 3 (Nioh 3) 開荒必知道的14個小技巧",
-    "author": "社群精華整理",
-    "date": "2026-05-21",
-    "gameVersion": "1.0.0",
-    "category": "guide",
-    "subcategory": "beginner",
-    "tags": []
-  },
-  {
-    "id": "nioh3-early-ki-depletion-guide",
-    "title": "仁王 3 (Nioh 3) 前期快速打空敵人精力條方法",
-    "author": "社群精華整理",
-    "date": "2026-05-21",
-    "gameVersion": "1.0.0",
-    "category": "guide",
-    "subcategory": "beginner",
-    "tags": []
+    "tags": [
+      "武器選擇",
+      "配點",
+      "削精",
+      "混沌"
+    ]
   },
   {
     "id": "nioh3-early-must-have-items",
-    "title": "仁王 3 (Nioh 3) 前期必拿道具介紹",
+    "title": "《仁王3》開荒前期必拿道具與忍者開荒起步指南",
     "author": "社群精華整理",
     "date": "2026-05-21",
     "gameVersion": "1.0.0",
     "category": "guide",
     "subcategory": "beginner",
-    "tags": []
+    "tags": [
+      "必拿道具",
+      "開荒",
+      "忍者"
+    ]
   },
   {
-    "id": "nioh3-early-weapons-and-stats",
-    "title": "仁王 3 (Nioh 3) 前期武器選擇與屬性加點推薦",
-    "author": "社群精華整理",
-    "date": "2026-05-21",
-    "gameVersion": "1.0.0",
-    "category": "guide",
-    "subcategory": "beginner",
-    "tags": []
-  },
-  {
-    "id": "nioh3-endgame-gear-farming",
-    "title": "(3) 【攻略】仁王3】後期最速刷裝方法-更快畢業實現裝備自由 @仁王 哈啦板 - 巴哈姆特",
-    "author": "社群精華整理",
-    "date": "2026-03-22",
-    "gameVersion": "1.0.0",
-    "category": "guide",
-    "subcategory": "misc",
-    "tags": []
-  },
-  {
-    "id": "nioh3-explosive-arrows-magic-build",
-    "title": "(3) 【攻略】外鄉人戰法 爆炸箭x陰陽術 二周目裝備配置 (v1.03版) @仁王 哈啦板 - 巴哈姆特",
-    "author": "社群精華整理",
-    "date": "2026-03-22",
-    "gameVersion": "1.0.0",
-    "category": "build",
-    "subcategory": "endgame-builds",
-    "tags": []
-  },
-  {
-    "id": "nioh3-first-playthrough-tips",
-    "title": "(3) 【心得】仁王3 一周目無雷心得 + 懶人包小技巧 (4樓更新效率刷裝點 & 裝備整理) @仁王 哈啦板 - 巴哈姆特",
-    "author": "社群精華整理",
-    "date": "2026-03-22",
-    "gameVersion": "1.0.0",
-    "category": "guide",
-    "subcategory": "beginner",
-    "tags": []
-  },
-  {
-    "id": "nioh3-hatchet-flying-hawk-build",
-    "title": "仁王3手斧怎么玩？最强加点与无限番鹰流派全攻略",
+    "id": "nioh3-tonfa-infinite-ki-build",
+    "title": "《仁王3》旋棍「無限精力旋轉輪椅流」終極構築與逃課指南",
     "author": "社群精華整理",
     "date": "2026-05-21",
     "gameVersion": "1.0.0",
     "category": "build",
     "subcategory": "endgame-builds",
-    "tags": []
+    "tags": [
+      "旋棍",
+      "輪椅流",
+      "神薙",
+      "配裝"
+    ]
   },
   {
-    "id": "nioh3-hatchet-wolf-pack-build",
-    "title": [
-      "[03_遊戲攻略/仁王3/手斧「無腦群狼流」]"
-    ],
+    "id": "nioh3-hatchet-endgame-builds",
+    "title": "《仁王3》手斧「背水定身與群狼番鷹流」終極開荒與二周目構築指南",
     "author": "社群精華整理",
     "date": "2026-05-21",
-    "gameVersion": "1.0.0",
-    "category": "guide",
-    "subcategory": "misc",
-    "tags": []
-  },
-  {
-    "id": "nioh3-hatchets-backwater-bind-build",
-    "title": "(3) 【攻略】忍者/武士 背水定身流 逃課手斧進化版 充能琢技 x 武技爆發 二周目裝備配置 (V1.04版) @仁王 哈啦板 - 巴哈姆特",
-    "author": "社群精華整理",
-    "date": "2026-03-22",
     "gameVersion": "1.0.0",
     "category": "build",
     "subcategory": "endgame-builds",
-    "tags": []
+    "tags": [
+      "手斧",
+      "背水定身",
+      "番鷹",
+      "群狼"
+    ]
   },
   {
-    "id": "nioh3-hell-martial-skills",
-    "title": [
-      "[03_遊戲攻略/仁王3/地獄武技全解析與神技推薦]"
-    ],
+    "id": "nioh3-samurai-reduction-builds",
+    "title": "《仁王3》武士「終極減傷吸精與大旋風流」二周目構築指南",
     "author": "社群精華整理",
     "date": "2026-05-21",
-    "gameVersion": "1.0.0",
-    "category": "guide",
-    "subcategory": "systems",
-    "tags": []
-  },
-  {
-    "id": "nioh3-katana-skills-review",
-    "title": "(3) 【心得】刀的武技評價（無傷心得、密傳測試持續更新中） @仁王 哈啦板 - 巴哈姆特",
-    "author": "社群精華整理",
-    "date": "2026-03-22",
-    "gameVersion": "1.0.0",
-    "category": "guide",
-    "subcategory": "systems",
-    "tags": []
-  },
-  {
-    "id": "nioh3-ngplus-reduction-build",
-    "title": "(3) 【心得】二周目配裝思路（弁才天5+昆沙門天7）減傷靈技流 @仁王 哈啦板 - 巴哈姆特",
-    "author": "社群精華整理",
-    "date": "2026-03-22",
     "gameVersion": "1.0.0",
     "category": "build",
     "subcategory": "endgame-builds",
-    "tags": []
-  },
-  {
-    "id": "nioh3-ninja-dual-swords",
-    "title": [
-      "[03_遊戲攻略/仁王3/忍者雙刀]"
-    ],
-    "author": "社群精華整理",
-    "date": "2026-05-21",
-    "gameVersion": "1.0.0",
-    "category": "guide",
-    "subcategory": "misc",
-    "tags": []
-  },
-  {
-    "id": "nioh3-ninja-early-guide",
-    "title": [
-      "[03_遊戲攻略/仁王3/忍者開荒武器、配點、技能、裝備]"
-    ],
-    "author": "社群精華整理",
-    "date": "2026-05-21",
-    "gameVersion": "1.0.0",
-    "category": "guide",
-    "subcategory": "beginner",
-    "tags": []
+    "tags": [
+      "武士",
+      "減傷流",
+      "大旋風",
+      "恩寵"
+    ]
   },
   {
     "id": "nioh3-ninja-shadow-bind-build",
-    "title": "(3) 【攻略】忍者配裝 影縫定身流 x 溪水之法 推薦機關棍&旋棍 不綁武器 忍者/武士 雙 堅忍A/敏捷A 二周目裝備配置 (v1.03版) @仁王 哈啦板 - 巴哈姆特",
+    "title": "《仁王3》忍者「影縫定身與溪水雙刀流」二周目逃課構築指南",
     "author": "社群精華整理",
-    "date": "2026-03-22",
+    "date": "2026-05-21",
     "gameVersion": "1.0.0",
     "category": "build",
     "subcategory": "endgame-builds",
-    "tags": []
+    "tags": [
+      "忍者",
+      "影縫定身",
+      "雙刀",
+      "溪水之法"
+    ]
   },
   {
-    "id": "nioh3-odachi-early-guide",
-    "title": "仁王 3 (Nioh 3) 大太刀地掃斬詳細開荒教學",
+    "id": "nioh3-explosive-arrows-magic-build",
+    "title": "《仁王3》「外鄉人爆炸箭與陰陽術流」二周目高傷構築指南",
+    "author": "社群精華整理",
+    "date": "2026-05-21",
+    "gameVersion": "1.0.0",
+    "category": "build",
+    "subcategory": "endgame-builds",
+    "tags": [
+      "爆炸箭",
+      "外鄉人",
+      "陰陽術",
+      "幻術"
+    ]
+  },
+  {
+    "id": "nioh3-endgame-gear-farming",
+    "title": "《仁王3》後期最速刷裝與裝備整理指南",
     "author": "社群精華整理",
     "date": "2026-05-21",
     "gameVersion": "1.0.0",
     "category": "guide",
-    "subcategory": "beginner",
-    "tags": []
+    "subcategory": "misc",
+    "tags": [
+      "刷裝",
+      "裝備整理",
+      "後期"
+    ]
   },
   {
-    "id": "nioh3-one-set-all-weapons",
-    "title": "(3) 【心得】一個套裝輕鬆遊玩全部武士的武器 @仁王 哈啦板 - 巴哈姆特",
-    "author": "社群精華整理",
-    "date": "2026-03-22",
-    "gameVersion": "1.0.0",
-    "category": "build",
-    "subcategory": "endgame-builds",
-    "tags": []
-  },
-  {
-    "id": "nioh3-shalg-infinite-ki-build",
-    "title": [
-      "[03_遊戲攻略/仁王3/旋棍「無限精力輪椅流」]"
-    ],
+    "id": "nioh3-all-quest-guides",
+    "title": "《仁王3》全奇譚任務與地圖隱藏探索攻略",
     "author": "社群精華整理",
     "date": "2026-05-21",
     "gameVersion": "1.0.0",
-    "category": "build",
-    "subcategory": "beginner-builds",
-    "tags": []
+    "category": "guide",
+    "subcategory": "misc",
+    "tags": [
+      "奇譚",
+      "任務攻略",
+      "地圖探索"
+    ]
   },
   {
-    "id": "nioh3-shalg-spin-bd",
-    "title": "《仁王3》旋棍無限旋轉流BD分享 旋棍無限旋轉流怎麼構築-遊民星空 GamerSky.com",
+    "id": "nioh3-all-bosses-rating",
+    "title": "《仁王3》全 BOSS 打法分析與難度評級指南",
     "author": "社群精華整理",
     "date": "2026-05-21",
     "gameVersion": "1.0.0",
-    "category": "build",
-    "subcategory": "endgame-builds",
-    "tags": []
+    "category": "guide",
+    "subcategory": "misc",
+    "tags": [
+      "BOSS",
+      "打法建議",
+      "難度評級"
+    ]
   },
   {
-    "id": "nioh3-shalg-wheelchair-guide",
-    "title": "【問題】更新使用方法，旋棍輪椅閉眼也能打過王，十分影響遊戲體驗 @仁王 哈啦板 - 巴哈姆特",
+    "id": "nioh3-katana-and-hell-skills-review",
+    "title": "《仁王3》刀武技評價與地獄神技全解析指南",
     "author": "社群精華整理",
-    "date": "2026-03-26",
+    "date": "2026-05-21",
     "gameVersion": "1.0.0",
-    "category": "build",
-    "subcategory": "endgame-builds",
-    "tags": []
+    "category": "guide",
+    "subcategory": "systems",
+    "tags": [
+      "太刀",
+      "武技評價",
+      "地獄武技"
+    ]
   }
 ]

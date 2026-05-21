@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "postbuild": "npm run build:index",
     "preview": "vite preview",
     "build:index": "node tools/build_search_index.js",
     "ingest": "node tools/ingest_workflow.js"

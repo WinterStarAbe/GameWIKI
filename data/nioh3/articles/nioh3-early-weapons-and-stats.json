@@ -1,25 +1,47 @@
 {
   "id": "nioh3-early-weapons-and-stats",
-  "title": "仁王 3 (Nioh 3) 前期武器選擇與屬性加點推薦",
+  "title": "《仁王3》前期武器選擇、屬性配點與開荒快速削精指南",
   "author": "社群精華整理",
-  "source": "https://www.entertainment14.net/blog/post/111006083-%e4%bb%81%e7%8e%8b-3-nioh-3-%e5%89%8d%e6%9c%9f%e6%ad%a6%e5%99%a8%e9%81%b8%e6%93%87%e8%88%87%e5%b1%ac%e6%80%a7%e5%8a%a0%e9%bb%9e%e6%8e%a8%e8%96%a6",
+  "source": "https://forum.gamer.com.tw/B.php?bsn=8448",
   "date": "2026-05-21",
   "gameVersion": "1.0.0",
   "category": "guide",
   "subcategory": "beginner",
-  "tags": [],
+  "tags": [
+    "武器選擇",
+    "配點",
+    "削精",
+    "混沌"
+  ],
   "toc": [
     {
-      "id": "intro",
-      "title": "仁王 3 (Nioh 3) 前期武器選擇與屬性加點推薦"
+      "id": "weapon-recommendations",
+      "title": "前期開荒武器與屬性加點推薦"
+    },
+    {
+      "id": "odachi-early-guide",
+      "title": "大太刀地掃斬詳細開荒與武技教學"
+    },
+    {
+      "id": "ki-depletion-strategy",
+      "title": "前期快速削精與屬性混沌機制"
     }
   ],
   "sections": [
     {
-      "id": "intro",
-      "title": "仁王 3 (Nioh 3) 前期武器選擇與屬性加點推薦",
-      "content": "**作者：遊戲艾迪**\n\n**來源：bilibili**\n\n### 前期武器推薦\n\n新手關卡中推薦長槍。\n\n長槍擁有比較遠的攻擊距離，並且傷害也不低，通過長槍的重攻擊拉扯就能比較順利地過前期的BOSS。\n\n[![image](/images/nioh3/nioh3-early-weapons-and-stats/img_1.webp)](https://img1.entertainment14.net/images-webp/510/10/1770351010_7446.webp)\n\n三個重攻擊接殘心，拉開距離，不斷跟敵人拉扯，找好機會複讀即可。\n\n[![image](/images/nioh3/nioh3-early-weapons-and-stats/img_2.webp)](https://img1.entertainment14.net/images-webp/510/10/1770351010_7447.webp)\n\n完成新手關卡之後推薦把武器更換成斧子。\n\n斧子是前期非常強力的一種武器，擁有較高的面板傷害，並且削精和和恢復靈力的能力也很強。\n\n[![image](/images/nioh3/nioh3-early-weapons-and-stats/img_3.webp)](https://img1.entertainment14.net/images-webp/510/15/1770351015_7448.webp)\n\n依賴的加點也不多，主要是武士的上段架勢。\n\n[![image](/images/nioh3/nioh3-early-weapons-and-stats/img_4.webp)](https://img1.entertainment14.net/images-webp/510/14/1770351014_7449.webp)\n\n斧子加點中的拔山蓋世也是推薦優先點出來的。\n\n其他加點可以優先加一些提升攻擊力的。\n\n[![image](/images/nioh3/nioh3-early-weapons-and-stats/img_5.webp)](https://img1.entertainment14.net/images-webp/510/10/1770351010_7450.webp)\n\n戰鬥時就是先切換成上段，起手重攻擊，之後銜接上一個輕攻擊（也可以繼續重攻擊），然後殘心，這一套複讀即可。\n\n[![image](/images/nioh3/nioh3-early-weapons-and-stats/img_6.webp)](https://img1.entertainment14.net/images-webp/510/16/1770351016_7451.webp)\n\n忍者這邊推薦旋棍，旋棍跟斧子一樣擁有很強的壓制能力。\n\n[![image](/images/nioh3/nioh3-early-weapons-and-stats/img_7.webp)](https://img1.entertainment14.net/images-webp/510/15/1770351015_7452.webp)\n\n對加點依賴的也不多，主要是天上蓮這個技能。\n\n讓我們重攻擊之後接輕攻擊可以打出多段的傷害。\n\n[![image](/images/nioh3/nioh3-early-weapons-and-stats/img_8.webp)](https://img1.entertainment14.net/images-webp/510/11/1770351011_7453.webp)\n\n其他的可以加一個修羅連舞碎。\n\n[![image](/images/nioh3/nioh3-early-weapons-and-stats/img_9.webp)](https://img1.entertainment14.net/images-webp/510/14/1770351014_7454.webp)\n\n### 屬性加點\n\n建議把心優先加到10，加心可以同時提升體力和精力。\n\n然後是體，也可以優先加到10\n\n然後剛加到10\n\n之後把咒加到10，咒可以讓我們攜帶一些妖怪技能。\n\n最後是智，加到10，智可以提升我們使用的忍者技能。\n\n武和技根據大家的喜好加就行。"
+      "id": "weapon-recommendations",
+      "title": "前期開荒武器與屬性加點推薦",
+      "content": "**作者：遊戲艾迪**\n\n**來源：bilibili**\n\n### 前期武器推薦\n\n新手關卡中推薦長槍。\n\n長槍擁有比較遠的攻擊距離，並且傷害也不低，通過長槍的重攻擊拉扯就能比較順利地過前期的BOSS。\n\n[![](https://img1.entertainment14.net/images-webp/510/10/1770351010_7446.webp)](https://img1.entertainment14.net/images-webp/510/10/1770351010_7446.webp)\n\n三個重攻擊接殘心，拉開距離，不斷跟敵人拉扯，找好機會複讀即可。\n\n[![](https://img1.entertainment14.net/images-webp/510/10/1770351010_7447.webp)](https://img1.entertainment14.net/images-webp/510/10/1770351010_7447.webp)\n\n完成新手關卡之後推薦把武器更換成斧子。\n\n斧子是前期非常強力的一種武器，擁有較高的面板傷害，並且削精和和恢復靈力的能力也很強。\n\n[![](https://img1.entertainment14.net/images-webp/510/15/1770351015_7448.webp)](https://img1.entertainment14.net/images-webp/510/15/1770351015_7448.webp)\n\n依賴的加點也不多，主要是武士的上段架勢。\n\n[![](https://img1.entertainment14.net/images-webp/510/14/1770351014_7449.webp)](https://img1.entertainment14.net/images-webp/510/14/1770351014_7449.webp)\n\n斧子加點中的拔山蓋世也是推薦優先點出來的。\n\n其他加點可以優先加一些提升攻擊力的。\n\n[![](https://img1.entertainment14.net/images-webp/510/10/1770351010_7450.webp)](https://img1.entertainment14.net/images-webp/510/10/1770351010_7450.webp)\n\n戰鬥時就是先切換成上段，起手重攻擊，之後銜接上一個輕攻擊（也可以繼續重攻擊），然後殘心，這一套複讀即可。\n\n[![](https://img1.entertainment14.net/images-webp/510/16/1770351016_7451.webp)](https://img1.entertainment14.net/images-webp/510/16/1770351016_7451.webp)\n\n忍者這邊推薦旋棍，旋棍跟斧子一樣擁有很強的壓制能力。\n\n[![](https://img1.entertainment14.net/images-webp/510/15/1770351015_7452.webp)](https://img1.entertainment14.net/images-webp/510/15/1770351015_7452.webp)\n\n對加點依賴的也不多，主要是天上蓮這個技能。\n\n讓我們重攻擊之後接輕攻擊可以打出多段的傷害。\n\n[![](https://img1.entertainment14.net/images-webp/510/11/1770351011_7453.webp)](https://img1.entertainment14.net/images-webp/510/11/1770351011_7453.webp)\n\n其他的可以加一個修羅連舞碎。\n\n[![](https://img1.entertainment14.net/images-webp/510/14/1770351014_7454.webp)](https://img1.entertainment14.net/images-webp/510/14/1770351014_7454.webp)\n\n### 屬性加點\n\n建議把心優先加到10，加心可以同時提升體力和精力。\n\n然後是體，也可以優先加到10\n\n然後剛加到10\n\n之後把咒加到10，咒可以讓我們攜帶一些妖怪技能。\n\n最後是智，加到10，智可以提升我們使用的忍者技能。\n\n武和技根據大家的喜好加就行。"
+    },
+    {
+      "id": "odachi-early-guide",
+      "title": "大太刀地掃斬詳細開荒與武技教學",
+      "content": "**作者：男巫Brian**\n\n**來源：bilibili**\n\n### 技能獲取\n\n### 琢技堅固之法\n\n當我們打完濱松第一個BOSS解放了大地獄後，王地圖左邊走，在佐鳴湖有一個薄霧濕地傳送點。\n\n[![](https://img1.entertainment14.net/images-webp/615/623/1770635615_9623.webp)](https://img1.entertainment14.net/images-webp/615/623/1770635615_9623.webp)\n\n再往下有個千千古，在他旁邊就可以撿到一本技能書：琢技堅固之法。\n\n效果為發動琢技期間承受的傷害減少15%。\n\n[![](https://img1.entertainment14.net/images-webp/611/624/1770635611_9624.webp)](https://img1.entertainment14.net/images-webp/611/624/1770635611_9624.webp)\n\n[![](https://img1.entertainment14.net/images-webp/611/625/1770635611_9625.webp)](https://img1.entertainment14.net/images-webp/611/625/1770635611_9625.webp)\n\n### 壓斬之法\n\n第二本技能書我們要在濱松往上來到濱松丘陵，再往上來到井伊谷，這裡有個小地獄。\n\n[![](https://img1.entertainment14.net/images-webp/611/626/1770635611_9626.webp)](https://img1.entertainment14.net/images-webp/611/626/1770635611_9626.webp)\n\n再往左來到大銀杏參道傳送點，這裡有一個敵方據點。\n\n[![](https://img1.entertainment14.net/images-webp/611/627/1770635611_9627.webp)](https://img1.entertainment14.net/images-webp/611/627/1770635611_9627.webp)\n\n第一次過來清理完這裡的小怪後就可以在最裡面房子開一個寶箱，寶箱裡就可以獲得技能書：壓斬之法。\n\n效果為：發動琢技期間、施展強攻技和武技時不會畏懼，也就是霸體，不會被輕易打斷。\n\n[![](https://img1.entertainment14.net/images-webp/615/628/1770635615_9628.webp)](https://img1.entertainment14.net/images-webp/615/628/1770635615_9628.webp)\n\n[![](https://img1.entertainment14.net/images-webp/615/629/1770635615_9629.webp)](https://img1.entertainment14.net/images-webp/615/629/1770635615_9629.webp)\n\n然後來到傳送點的神龕，打開管理技能，把需要的技能打鉤就裝上了。\n\n[![](https://img1.entertainment14.net/images-webp/611/630/1770635611_9630.webp)](https://img1.entertainment14.net/images-webp/611/630/1770635611_9630.webp)\n\n### 裝備搭配\n\n兩件遊歷劍士裝束可以觸發兩件套效果，使用琢技攻擊可以回血。\n\n[![](https://img1.entertainment14.net/images-webp/611/631/1770635611_9631.webp)](https://img1.entertainment14.net/images-webp/611/631/1770635611_9631.webp)\n\n遊歷劍士套裝解鎖：我們要從濱松來到天龍川，再往上達到二俁街道，然後到達二俁。\n\n在這裡有一個叫做茶園之裡的傳送點。\n\n[![](https://img1.entertainment14.net/images-webp/615/632/1770635615_9632.webp)](https://img1.entertainment14.net/images-webp/615/632/1770635615_9632.webp)\n\n在傳送點往裡走可以找到一個高手。\n\n[![](https://img1.entertainment14.net/images-webp/612/633/1770635612_9633.webp)](https://img1.entertainment14.net/images-webp/612/633/1770635612_9633.webp)\n\n當你在做主線任務的時候，回合服部半藏一起過來找他，然後和他對話之後，他會說要挑戰我需要自己一個人來。\n\n所以我們需要完成任務之後，自己一個人過來找他。\n\n打敗它之後就能獲得遊歷劍士裝備掉落。\n\n然後再去打小怪就能刷出遊歷劍士套裝了。\n\n然後再傳三件禦一門眾之鎧解鎖套裝效果：增加體力，然後武技精力的消耗也會降低。\n\n這套裝備解鎖需要來到二俁城倉庫的傳送點。\n\n從傳送點出發，我們繼續往上走，在這上面要打一個有名字的精英怪，叫做穴山信君。\n\n打敗它就能獲得禦一門眾之鎧的裝備掉落，然後通過刷小怪就能獲得這套裝備，我們要刷出三件。\n\n### 武技\n\n打開菜單，找到上面的學習武技。\n\n然後再點開大太刀，需要使用武士的點數點開“地掃斬”技能。\n\n使用方法就是輕攻擊後加重攻擊鍵。\n\n學完武技之後需要裝備上，在自訂武技這裡。\n\n向下拉，在下段這裡把地掃斬這個武技裝上。\n\n### 操作\n\n我們先按手把的右邊RB+A鍵切換成下段持刀。\n\n然後就輕攻擊一次後就狂按重攻擊鍵，就會一直掃，知道精力空了為止。\n\n實戰的時候，我們就是要快速地把右邊琢技槽的白圈攢滿。\n\n攢滿之後會發白光，那時候使用武技就會自動觸發琢技效果，武器也會發白光，配合技能書，這時的攻擊就會有霸體，還能回血減傷。"
+    },
+    {
+      "id": "ki-depletion-strategy",
+      "title": "前期快速削精與屬性混沌機制",
+      "content": "**作者：趣聞叔叔**\n\n**來源：bilibili**\n\n### 快速打空敵人精力條方法\n\n只需要把敵人打入混沌狀態，也就是攻擊時摻雜著火、水、風、雷這些屬性，只要疊加兩種以上，敵人受到的傷害就會增加，如果敵人還是妖怪，那敵方的精力條都無法恢復，疊加兩種異常狀態，攻擊力應該會提升30%~40%。\n\n[![](https://img1.entertainment14.net/images-webp/149/512/1770464149_8512.webp)](https://img1.entertainment14.net/images-webp/149/512/1770464149_8512.webp)\n\n### 前期可以獲得的法術\n\n從水符/雷霆符：蛇骨婆的魂核可以換從水符，魑魅的魂核可以換雷霆符。\n\n[![](https://img1.entertainment14.net/images-webp/149/513/1770464149_8513.webp)](https://img1.entertainment14.net/images-webp/149/513/1770464149_8513.webp)\n\n火藥鏢：在濱松的存檔點一直往右走，過了橋，在右側的雜草裡面有一個被箱子遮住的洞口（如下圖），進去就能找到了火藥鏢。\n\n可以在自訂武技、忍術裡設置一下火藥鏢的快速鍵。這樣我們前期就有三種法術來把敵人打入混沌狀態了，提高攻擊力的同時，加速清空敵人的精力條。\n\n[![](https://img1.entertainment14.net/images-webp/149/514/1770464149_8514.webp)](https://img1.entertainment14.net/images-webp/149/514/1770464149_8514.webp)\n\n### 陽之刹那技能獲取方法\n\n陽之刹那的效果是加速陰陽術的動作，可以大幅縮短我們的施法時間。\n\n獲取方法：在久遠之隙存檔點二樓，NPC會給一個任務【陰陽道初傳】，在戰繪卷裡直接進入任務完成就行。"
     }
-  ],
-  "comments": []
+  ]
 }
