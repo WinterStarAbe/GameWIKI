@@ -31,4 +31,8 @@ export class DataLoader {
   static async getSearchIndex(gameSlug) {
     return this.fetchJson(`/data/${gameSlug}/search_index.json`);
   }
+
+  static async getGlobalSearchIndex() {
+    return this.fetchJson('/data/global_search_index.json');
+  }
 }

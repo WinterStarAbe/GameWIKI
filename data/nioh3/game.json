@@ -1,0 +1,39 @@
+{
+  "slug": "nioh3",
+  "title": "仁王 3 (Nioh 3)",
+  "categories": {
+    "guide": {
+      "label": "攻略教學",
+      "icon": "📖",
+      "description": "新手教學、系統介紹等固定內容",
+      "subcategories": [
+        {
+          "slug": "beginner",
+          "label": "新手入門"
+        },
+        {
+          "slug": "systems",
+          "label": "系統機制"
+        },
+        {
+          "slug": "misc",
+          "label": "綜合攻略"
+        }
+      ]
+    },
+    "build": {
+      "label": "流派配置",
+      "icon": "⚔️",
+      "subcategories": [
+        {
+          "slug": "beginner-builds",
+          "label": "開荒配置"
+        },
+        {
+          "slug": "endgame-builds",
+          "label": "後期流派"
+        }
+      ]
+    }
+  }
+}

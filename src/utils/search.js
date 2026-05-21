@@ -1,4 +1,4 @@
-﻿import Fuse from 'fuse.js';
+import Fuse from 'fuse.js';
 import DOMPurify from 'dompurify';
 import { DataLoader } from './dataLoader.js';
 
@@ -14,6 +14,7 @@ export class SearchController {
     this.searchIndex = [];
     this.currentSlug = null;
     this.isLoading = false;
+    this.gameTitlesMap = {};
 
     if (!this.modal || !this.input || !this.resultsContainer) {
       console.warn('[SearchController] Search elements not found in DOM.');
@@ -73,6 +74,55 @@ export class SearchController {
     return null;
   }
 
+  async loadGlobalIndex() {
+    if (this.currentSlug === 'global' && this.fuse) return true;
+    
+    this.isLoading = true;
+    this.resultsContainer.innerHTML = `
+      <div class="flex items-center justify-center py-12">
+        <div class="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-purple-500 mr-3"></div>
+        <span class="text-gray-400 text-sm">載入全站搜尋索引中...</span>
+      </div>
+    `;
+    
+    try {
+      const gamesData = await DataLoader.getGamesList();
+      const games = gamesData.games || [];
+      
+      this.gameTitlesMap = {};
+      games.forEach(g => {
+        this.gameTitlesMap[g.slug] = g.title;
+      });
+      
+      // Load the pre-aggregated global search index from a single file
+      this.searchIndex = await DataLoader.getGlobalSearchIndex();
+      
+      this.fuse = new Fuse(this.searchIndex, {
+        keys: [
+          { name: 'articleTitle', weight: 0.5 },
+          { name: 'sectionTitle', weight: 0.4 },
+          { name: 'tags', weight: 0.4 },
+          { name: 'content', weight: 0.2 }
+        ],
+        threshold: 0.4,
+        includeMatches: true
+      });
+      
+      this.currentSlug = 'global';
+      this.isLoading = false;
+      return true;
+    } catch (e) {
+      console.error('[SearchController] Failed to load global search index:', e);
+      this.resultsContainer.innerHTML = `
+        <div class="text-center py-8 text-red-400 text-sm">
+          載入全站搜尋索引失敗，請稍後重試。
+        </div>
+      `;
+      this.isLoading = false;
+      return false;
+    }
+  }
+
   async loadIndexForGame(slug) {
     if (this.currentSlug === slug && this.fuse) return true;
     
@@ -86,6 +136,17 @@ export class SearchController {
     
     try {
       this.searchIndex = await DataLoader.getSearchIndex(slug);
+      
+      // Update games map even for single game to support display mapping
+      try {
+        const gamesData = await DataLoader.getGamesList();
+        gamesData.games.forEach(g => {
+          this.gameTitlesMap[g.slug] = g.title;
+        });
+      } catch (err) {
+        console.warn('[SearchController] Failed to fetch games list for name map mapping');
+      }
+      
       this.fuse = new Fuse(this.searchIndex, {
         keys: [
           { name: 'articleTitle', weight: 0.5 },
@@ -130,20 +191,14 @@ export class SearchController {
       </div>
     `;
 
-    if (!slug) {
-      this.resultsContainer.innerHTML = `
-        <div class="text-center py-12 text-amber-400/80 text-sm">
-          ⚠️ 請先點選進入特定遊戲 Wiki 專區，再進行攻略內容的全文搜尋。
-        </div>
-      `;
-      this.input.disabled = true;
-      this.input.placeholder = '請先進入遊戲 Wiki 專區...';
-      return;
-    }
-
     this.input.disabled = false;
-    this.input.placeholder = '搜尋攻略標題、內容、標籤...';
-    await this.loadIndexForGame(slug);
+    if (!slug) {
+      this.input.placeholder = '搜尋全站遊戲攻略...';
+      await this.loadGlobalIndex();
+    } else {
+      this.input.placeholder = '搜尋攻略標題、內容、標籤...';
+      await this.loadIndexForGame(slug);
+    }
   }
 
   close() {
@@ -186,14 +241,25 @@ export class SearchController {
       
       const link = `#/${item.gameSlug}/article/${item.articleId}#${item.sectionId}`;
       
+      // Determine if we need to show game badge (only on global search)
+      const isGlobal = this.currentSlug === 'global';
+      const gameTitle = isGlobal ? (this.gameTitlesMap[item.gameSlug] || item.gameSlug) : '';
+      const gameBadge = isGlobal ? `
+        <span class="px-2 py-0.5 text-xs rounded bg-purple-950/80 border border-purple-700/50 text-purple-300 font-bold shrink-0">
+          ${DOMPurify.sanitize(gameTitle)}
+        </span>
+        <span class="text-gray-500 text-xs shrink-0">➜</span>
+      ` : '';
+      
       return `
         <a href="${link}" class="search-result-item block p-4 rounded-xl border border-gray-800/60 bg-gray-900/30 hover:bg-purple-900/10 hover:border-purple-500/40 transition-all duration-200 group">
-          <div class="flex items-center gap-2 mb-1.5">
-            <span class="px-2 py-0.5 text-xs rounded bg-purple-950/60 border border-purple-800/40 text-purple-300 font-medium">
+          <div class="flex items-center gap-2 mb-1.5 flex-wrap">
+            ${gameBadge}
+            <span class="px-2 py-0.5 text-xs rounded bg-purple-950/60 border border-purple-800/40 text-purple-300 font-medium truncate max-w-[150px] sm:max-w-[200px]">
               ${DOMPurify.sanitize(item.articleTitle)}
             </span>
-            <span class="text-gray-500 text-xs">➜</span>
-            <span class="text-sm font-semibold text-gray-200 group-hover:text-purple-300 transition-colors">
+            <span class="text-gray-500 text-xs shrink-0">➜</span>
+            <span class="text-sm font-semibold text-gray-200 group-hover:text-purple-300 transition-colors truncate">
               ${matchedTitle}
             </span>
           </div>
@@ -244,4 +310,3 @@ export class SearchController {
     return DOMPurify.sanitize(text.replace(regex, '<mark class="bg-purple-500/30 text-purple-200 rounded px-1 font-medium">$1</mark>'));
   }
 }
-

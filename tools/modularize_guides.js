@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const outDir = 'E:\\WorkSpace\\GameWIKI\\data\\stoneshard\\articles';
+const outDir = path.resolve(__dirname, '../data/stoneshard/articles');
 fs.mkdirSync(outDir, { recursive: true });
 
 // Helper to write article JSON
@@ -630,5 +630,5 @@ for (const file of existingFiles) {
   }
 }
 
-fs.writeFileSync('E:\\WorkSpace\\GameWIKI\\data\\stoneshard\\index.json', JSON.stringify(indexData, null, 2));
+fs.writeFileSync(path.resolve(__dirname, '../data/stoneshard/index.json'), JSON.stringify(indexData, null, 2));
 console.log('index.json rebuilt successfully with all articles.');

@@ -1,13 +1,15 @@
-﻿const fs = require('fs/promises');
+const fs = require('fs/promises');
 const path = require('path');
 
 async function buildIndex() {
   console.log('[Search Index Builder] Starting...');
   const gamesFilePath = path.join(__dirname, '../data/games.json');
+  const globalIndexFilePath = path.join(__dirname, '../data/global_search_index.json');
   
   try {
     const gamesDataRaw = await fs.readFile(gamesFilePath, 'utf8');
     const { games } = JSON.parse(gamesDataRaw);
+    const globalSearchIndex = [];
     
     for (const game of games) {
       const slug = game.slug;
@@ -37,7 +39,7 @@ async function buildIndex() {
           }
           
           article.sections.forEach(section => {
-            searchIndex.push({
+            const indexItem = {
               gameSlug: slug,
               articleId: article.id,
               articleTitle: article.title,
@@ -47,7 +49,9 @@ async function buildIndex() {
               sectionId: section.id,
               sectionTitle: section.title,
               content: section.content || ''
-            });
+            };
+            searchIndex.push(indexItem);
+            globalSearchIndex.push(indexItem);
           });
         }
       }
@@ -55,6 +59,10 @@ async function buildIndex() {
       await fs.writeFile(outputFilePath, JSON.stringify(searchIndex, null, 2), 'utf8');
       console.log(`[Search Index Builder] Generated ${searchIndex.length} index items for ${slug} -> ${outputFilePath}`);
     }
+    
+    // Write the aggregated global search index
+    await fs.writeFile(globalIndexFilePath, JSON.stringify(globalSearchIndex, null, 2), 'utf8');
+    console.log(`[Search Index Builder] Generated ${globalSearchIndex.length} aggregated global index items -> ${globalIndexFilePath}`);
     
     console.log('[Search Index Builder] All indexes generated successfully.');
   } catch (e) {

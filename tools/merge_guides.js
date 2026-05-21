@@ -2,9 +2,9 @@ const fs = require('fs');
 const https = require('https');
 const path = require('path');
 
-const sourceDir = 'E:\\WorkSpace\\我的筆記\\03_遊戲攻略\\紫色晶石';
-const outDir = 'E:\\WorkSpace\\GameWIKI\\data\\stoneshard\\articles';
-const imgDir = 'E:\\WorkSpace\\GameWIKI\\public\\images\\stoneshard\\beginner-guide';
+const sourceDir = path.resolve(__dirname, '../../我的筆記/03_遊戲攻略/紫色晶石');
+const outDir = path.resolve(__dirname, '../data/stoneshard/articles');
+const imgDir = path.resolve(__dirname, '../public/images/stoneshard/beginner-guide');
 
 const filesToMerge = [
   { file: '【攻略】【新手教學】紫色晶石 0.9.4 血兆版本 @Stoneshard 哈啦板 - 巴哈姆特.md', version: '0.9.4', title: '0.9.4 血兆版本新手教學' },
@@ -109,14 +109,15 @@ async function process() {
       category: d.category, subcategory: d.subcategory, tags: d.tags
     };
   });
-  fs.writeFileSync('E:\\WorkSpace\\GameWIKI\\data\\stoneshard\\index.json', JSON.stringify(index, null, 2));
+  const stoneshardIndexFilePath = path.resolve(__dirname, '../data/stoneshard/index.json');
+  fs.writeFileSync(stoneshardIndexFilePath, JSON.stringify(index, null, 2));
   console.log('index.json updated.');
   
   // Auto trigger search index builder
   try {
     const { execSync } = require('child_process');
     console.log('Rebuilding search indexes...');
-    execSync('node tools/build_search_index.js', { stdio: 'inherit' });
+    execSync(`"${process.execPath}" tools/build_search_index.js`, { stdio: 'inherit', cwd: path.resolve(__dirname, '..') });
   } catch (err) {
     console.error('Failed to trigger search index builder:', err);
   }
